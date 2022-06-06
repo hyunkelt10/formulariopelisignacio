@@ -27,9 +27,30 @@
         android:id="@+id/tvDatos"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="627dp" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

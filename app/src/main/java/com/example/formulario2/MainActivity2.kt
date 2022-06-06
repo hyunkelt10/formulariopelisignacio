@@ -14,8 +14,15 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(b.root)
 
         val datos = intent.extras
-        b.tvDatos.text = datos?.get("METRAJE").toString()
-        b.tvDatos.text = datos?.get("SERIE").toString()
+        val str = """   Datos introducidos
+            Título: ${datos?.get("TITULO")}
+            Año: ${datos?.get("Spiner")}
+            Tipo: ${datos?.get("TIPO")}
+             Categorías: ${datos?.get("CATEGORIA")}
+        """.trimIndent()
+        msj(this,str,false)
+        b.tvDatos.text = str
+        b.btnVolver.setOnClickListener { onBackPressed() }
 
 
 
